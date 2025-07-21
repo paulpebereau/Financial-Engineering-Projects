@@ -10,7 +10,7 @@ The benchmark used for training and evaluation is the price of a **geometric Asi
 ## Repository Structure
 
 ```
-📁 ML_Project/
+ML_Project/
 │
 ├── ML_Project.ipynb         # Main notebook: simulation, training, evaluation
 ├── reg_10/                  # Saved neural network model (TensorFlow format)
@@ -61,7 +61,7 @@ input = np.array([[100, 0.2, 0.05, 100, 1.0]])  # S0, sigma, r, K, T
 predicted_price = model.predict(input)
 ```
 
-## 📦 Requirements
+## Requirements
 
 Install dependencies via pip:
 
@@ -69,7 +69,7 @@ Install dependencies via pip:
 pip install numpy pandas matplotlib scipy tqdm scikit-learn tensorflow
 ```
 
-## 📈 Notes
+## Notes
 
 - The Monte Carlo simulation remains a highly flexible benchmark but is computationally expensive.
 - The neural network offers rapid inference after training, making it attractive for real-time applications.
