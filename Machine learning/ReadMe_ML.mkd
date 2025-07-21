@@ -1,4 +1,4 @@
-# 🧠 Asian Option Pricing: Monte Carlo vs Neural Network
+# Asian Option Pricing: Monte Carlo vs Neural Network
 
 This project investigates and compares the performance of two predictive models in the approximation of the price of an **arithmetic Asian call option**:
 
@@ -33,8 +33,9 @@ The purpose is to evaluate:
 ## Methodology
 
 1. **Monte Carlo Pricing**:
-   - Generate datasets of inputs `[S0, sigma, r, K, T]` and corresponding Monte Carlo prices.
-   - Use a simulation engine (`MonteCarlo_option`) to compute the price of an **arithmetic Asian call option** under various market parameters.
+   - Define a list of values for each model parameter (`S0`, `sigma`, `r`, `K`, `T`).
+   - Construct a dataset by computing the Cartesian product of all these parameter combinations, resulting in a full grid of market conditions.
+   - For each combination, compute the price of an **arithmetic Asian call option** using the `MonteCarlo_option` function.
 
 2. **Neural Network Training**:
    - Use the same parameters datasets as generated for the Monte-Carlo predictions
